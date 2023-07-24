@@ -16,40 +16,42 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Drawer(
-      child: Column(
-        children: [
-          myInfo(),
-          Expanded(
-            child: SingleChildScrollView(
-              padding: EdgeInsets.all(defaultPadding),
-              child: Column(
-                children: [
-                  PersonalInformation(
-                    title: "Degree",
-                    information: "B.Tech CSE",
-                  ),
-                  PersonalInformation(
-                    title: "College",
-                    information: "NIT Rourkela",
-                  ),
-                  PersonalInformation(
-                    title: "Residence",
-                    information: "India, Kerala",
-                  ),
-                  Divider(),
-                  SkillHeader(),
-                  skillText(skill: "Flutter, Dart"),
-                  skillText(skill: "Git, Github"),
-                  skillText(skill: "C, C++"),
-                  skillText(skill: "Firebase"),
-                  Divider(),
-                  DownloadResumeButton(),
-                  SocialMediaLinks()
-                ],
+      child: SafeArea(
+        child: Column(
+          children: [
+            myInfo(),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.all(defaultPadding),
+                child: Column(
+                  children: [
+                    PersonalInformation(
+                      title: "Degree",
+                      information: "B.Tech CSE",
+                    ),
+                    PersonalInformation(
+                      title: "College",
+                      information: "NIT Rourkela",
+                    ),
+                    PersonalInformation(
+                      title: "Residence",
+                      information: "India, Kerala",
+                    ),
+                    Divider(),
+                    SkillHeader(),
+                    skillText(skill: "Flutter, Dart"),
+                    skillText(skill: "Git, Github"),
+                    skillText(skill: "C, C++"),
+                    skillText(skill: "Firebase"),
+                    Divider(),
+                    DownloadResumeButton(),
+                    SocialMediaLinks()
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

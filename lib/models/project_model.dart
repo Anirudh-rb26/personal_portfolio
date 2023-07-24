@@ -7,7 +7,8 @@ class Project {
 List<Project> my_projects = [
   Project(
     title: "Project 1",
-    description: "Description of Project 1",
+    description:
+        "Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1, Description of Project 1",
   ),
   Project(
     title: "Project 2",

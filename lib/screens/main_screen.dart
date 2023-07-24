@@ -12,16 +12,28 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: backgroundColor,
+        leading: Builder(
+          builder: (context) => IconButton(
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            icon: const Icon(Icons.menu),
+          ),
+        ),
+      ),
+      drawer: const SideMenu(),
       body: Center(
         child: Container(
           constraints: const BoxConstraints(maxWidth: maxWidth),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Expanded(
-                flex: 2,
-                child: SideMenu(),
-              ),
+              // const Expanded(
+              //   flex: 2,
+              //   child: SideMenu(),
+              // ),
               const SizedBox(width: defaultPadding),
               Expanded(
                 flex: 7,
@@ -31,6 +43,7 @@ class MainScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(width: defaultPadding),
             ],
           ),
         ),
