@@ -1,6 +1,4 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:anirudhs_portfolio/constants.dart';
-import 'package:anirudhs_portfolio/models/project_model.dart';
 import 'package:anirudhs_portfolio/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
