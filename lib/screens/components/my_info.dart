@@ -1,3 +1,4 @@
+import 'package:anirudhs_portfolio/constants.dart';
 import 'package:flutter/material.dart';
 
 class myInfo extends StatelessWidget {
@@ -21,9 +22,16 @@ class myInfo extends StatelessWidget {
               backgroundImage: AssetImage("assets/images/srt.jpg"),
             ),
             const Spacer(),
-            Text(
-              "Anirudh Jayakumar",
-              style: Theme.of(context).textTheme.titleSmall,
+            TextButton(
+              child: Text(
+                "Anirudh Jayakumar",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleSmall
+                    ?.copyWith(color: primaryColor),
+              ),
+              // Route To ->  My Profile
+              onPressed: () {},
             ),
             const Text(
               "Flutter Developer\nPhotographer & Cinematographer",
