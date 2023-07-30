@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class MyProfile extends StatelessWidget {
@@ -5,6 +7,14 @@ class MyProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+          Row(
+            children: [],
+          ),
+        ],
+      ),
+    );
   }
 }
