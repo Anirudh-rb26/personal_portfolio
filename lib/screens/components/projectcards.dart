@@ -1,8 +1,11 @@
 import 'package:anirudhs_portfolio/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../constants.dart';
 import '../../models/project_model.dart';
+
+void openURL(String url) => launchUrl(Uri.parse(url));
 
 class ProjectScreen extends StatelessWidget {
   const ProjectScreen({
@@ -75,12 +78,16 @@ class ProjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(defaultPadding),
-      color: secondaryColor,
+      // color: secondaryColor,
+      decoration: BoxDecoration(
+        color: secondaryColor,
+        borderRadius: BorderRadius.circular(35),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            project.title!,
+            project.title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: Theme.of(context).textTheme.titleSmall,
@@ -94,7 +101,9 @@ class ProjectCard extends StatelessWidget {
           ),
           const Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              openURL(project.url);
+            },
             child: const Text(
               "Read More >>>",
               style: TextStyle(color: primaryColor),
