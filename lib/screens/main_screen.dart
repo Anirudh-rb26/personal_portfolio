@@ -1,7 +1,7 @@
-import 'package:anirudhs_portfolio/constants.dart';
+import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-import 'components/sidemenu_bar.dart';
+import 'components/drawer/sidemenu_bar.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key, required this.mainChildren});

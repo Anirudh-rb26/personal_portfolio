@@ -1,9 +1,9 @@
-import 'package:anirudhs_portfolio/responsive.dart';
+import 'package:anirudhs_portfolio/utils/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../constants.dart';
-import '../../models/project_model.dart';
+import '../../../utils/constants.dart';
+import '../../../models/project_model.dart';
 
 void openURL(String url) => launchUrl(Uri.parse(url));
 

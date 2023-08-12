@@ -1,8 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:anirudhs_portfolio/responsive.dart';
+import 'package:anirudhs_portfolio/utils/responsive.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../utils/constants.dart';
 
 class HomeBanner extends StatelessWidget {
   const HomeBanner({

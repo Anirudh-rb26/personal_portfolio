@@ -1,8 +1,8 @@
-import 'package:anirudhs_portfolio/constants.dart';
-import 'package:anirudhs_portfolio/screens/components/personalInformation.dart';
-import 'package:anirudhs_portfolio/screens/components/skillHeader.dart';
-import 'package:anirudhs_portfolio/screens/components/skillsText.dart';
-import 'package:anirudhs_portfolio/screens/components/socialMedia_links.dart';
+import 'package:anirudhs_portfolio/utils/constants.dart';
+import 'package:anirudhs_portfolio/screens/components/drawer/personalInformation.dart';
+import 'package:anirudhs_portfolio/screens/components/drawer/skillHeader.dart';
+import 'package:anirudhs_portfolio/screens/components/drawer/skillsText.dart';
+import 'package:anirudhs_portfolio/screens/components/contact%20screen/socialMedia_links.dart';
 import 'package:flutter/material.dart';
 
 import 'downloadResume_button.dart';

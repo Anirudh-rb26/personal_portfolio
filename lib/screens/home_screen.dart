@@ -1,9 +1,9 @@
-import 'package:anirudhs_portfolio/constants.dart';
+import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:anirudhs_portfolio/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'components/bannerScreen.dart';
-import 'components/projectcards.dart';
+import 'components/banner/bannerScreen.dart';
+import 'components/project screen/projectcards.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

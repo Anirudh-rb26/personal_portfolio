@@ -1,4 +1,4 @@
-import 'package:anirudhs_portfolio/constants.dart';
+import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class myInfo extends StatelessWidget {
