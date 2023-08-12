@@ -26,7 +26,7 @@ class SideMenu extends StatelessWidget {
                 child: Column(
                   children: [
                     PersonalInformation(
-                      title: "Degree",
+                      title: "Education",
                       information: "B.Tech CSE",
                     ),
                     PersonalInformation(
@@ -34,7 +34,7 @@ class SideMenu extends StatelessWidget {
                       information: "NIT Rourkela",
                     ),
                     PersonalInformation(
-                      title: "Residence",
+                      title: "Home",
                       information: "India, Kerala",
                     ),
                     Divider(),
@@ -42,10 +42,10 @@ class SideMenu extends StatelessWidget {
                     skillText(skill: "Flutter, Dart"),
                     skillText(skill: "Git, Github"),
                     skillText(skill: "C, C++"),
-                    skillText(skill: "Firebase"),
+                    skillText(skill: "Firebase, Hive"),
+                    skillText(skill: "Photography, Cinematographer"),
                     Divider(),
                     DownloadResumeButton(),
-                    SocialMediaLinks()
                   ],
                 ),
               ),

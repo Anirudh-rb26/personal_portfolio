@@ -34,7 +34,7 @@ class myInfo extends StatelessWidget {
               onPressed: () {},
             ),
             const Text(
-              "Flutter Developer\nPhotographer & Cinematographer",
+              "Fix the inputs & the outputs fix themselves",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,
