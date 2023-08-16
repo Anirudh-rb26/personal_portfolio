@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../utils/constants.dart';
+import '../../../../utils/constants.dart';
 
 class DownloadResumeButton extends StatelessWidget {
   const DownloadResumeButton({

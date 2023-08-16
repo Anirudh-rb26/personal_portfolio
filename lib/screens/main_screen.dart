@@ -1,3 +1,4 @@
+import 'package:anirudhs_portfolio/screens/components/appbar/my_appbar.dart';
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -12,17 +13,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: backgroundColor,
-        leading: Builder(
-          builder: (context) => IconButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            icon: const Icon(Icons.menu),
-          ),
-        ),
-      ),
+      appBar: MyAppBar(context),
       drawer: const SideMenu(),
       body: Center(
         child: Container(
