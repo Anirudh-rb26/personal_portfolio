@@ -35,10 +35,10 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
             options: CarouselOptions(
                 height: responsiveHeight,
                 autoPlay: true,
-                autoPlayInterval: const Duration(seconds: 15),
+                autoPlayInterval: const Duration(seconds: 5),
                 viewportFraction: 1,
                 enlargeCenterPage: true,
-                enableInfiniteScroll: false,
+                // enableInfiniteScroll: false,
                 initialPage: 0,
                 onPageChanged: (index, reason) {
                   setState(() {
@@ -56,27 +56,21 @@ class _ExperienceScreenState extends State<ExperienceScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.all(defaultPadding),
-                backgroundColor: secondaryColor,
-              ),
-              child: const Icon(Icons.arrow_back_ios),
+            IconButton(
               onPressed: () {
                 controller.previousPage(
-                    duration: const Duration(milliseconds: 400));
+                  duration: const Duration(milliseconds: 400),
+                );
               },
+              icon: const Icon(Icons.arrow_back_ios),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.all(defaultPadding),
-                backgroundColor: secondaryColor,
-              ),
-              child: const Icon(Icons.arrow_forward_ios),
+            IconButton(
               onPressed: () {
                 controller.nextPage(
-                    duration: const Duration(milliseconds: 400));
+                  duration: const Duration(milliseconds: 400),
+                );
               },
+              icon: const Icon(Icons.arrow_forward_ios),
             ),
           ],
         )
@@ -127,7 +121,10 @@ Widget buildCarouselCard(Experience experience, int index) {
               color: primaryColor,
             ),
             Text(experience.description),
-            Text(experience.date),
+            Text(
+              experience.date,
+              style: const TextStyle(color: primaryColor),
+            ),
           ],
         ),
       ),

@@ -1,49 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+const photographyInstagram = "https://www.instagram.com/lockdown.mediahouse/";
+const linkedin = "https://www.linkedin.com/in/anirudhjayakumar/";
+const cinematographyYoutube = "https://www.youtube.com/@lockdownMediahouse/";
+const github = "https://github.com/Anirudh-rb26";
 
-import '../../../utils/constants.dart';
-
-class SocialMediaLinks extends StatelessWidget {
-  const SocialMediaLinks({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(top: defaultPadding / 2),
-      color: const Color(0xFF24242E),
-      child: Row(
-        children: [
-          const Spacer(),
-          // Github
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/check.svg"),
-          ),
-          // Leetcode
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/check.svg"),
-          ),
-          // linkedin
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/check.svg"),
-          ),
-          // Instagram
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/check.svg"),
-          ),
-          // Youtube
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/check.svg"),
-          ),
-          const Spacer(),
-        ],
-      ),
-    );
-  }
-}
+const twitter = "https://twitter.com/anirudh_rb26";
+const personalInstagram = "https://www.instagram.com/anirudh.cr2/";
+const personalYoutube = "https://www.youtube.com/@notsoOrignal/";

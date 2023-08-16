@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:anirudhs_portfolio/screens/components/project%20screen/project_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -24,7 +25,8 @@ class DownloadResumeButton extends StatelessWidget {
           ),
           child: IconButton(
             onPressed: () {
-              print("it works");
+              openURL(
+                  "https://drive.google.com/file/d/1Fc_vEwjagbmIuKcXbJZPVkrVbxfoeamg/view?usp=sharing");
             },
             icon: Icon(Icons.file_copy),
           ),

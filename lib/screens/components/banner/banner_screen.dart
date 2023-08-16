@@ -1,6 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:anirudhs_portfolio/screens/components/project%20screen/project_cards.dart';
 import 'package:anirudhs_portfolio/utils/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:mailto/mailto.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../utils/constants.dart';
 
@@ -39,18 +42,24 @@ class HomeBanner extends StatelessWidget {
                 ),
                 if (Responsive.isMobileLarge(context))
                   const SizedBox(height: defaultPadding / 2),
-                CustomAnimatedText(),
+                const CustomAnimatedText(),
                 const SizedBox(height: defaultPadding),
-                if (!Responsive.isMobileLarge(context))
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: defaultPadding * 2,
-                            vertical: defaultPadding),
-                        backgroundColor: primaryColor),
-                    child: const Text("Contact Me"),
-                  ),
+                // if (!Responsive.isMobileLarge(context))
+                //   ElevatedButton(
+                //     onPressed: () {
+                //       String emailAddress =
+                //           "anirudhjayakumar.business@gmail.com";
+                //       final url = 'mailto:$emailAddress?';
+
+                //       openURL("mailto:anirudhjayakumar.business@gmail.com");
+                //     },
+                //     style: TextButton.styleFrom(
+                //         padding: const EdgeInsets.symmetric(
+                //             horizontal: defaultPadding * 2,
+                //             vertical: defaultPadding),
+                //         backgroundColor: primaryColor),
+                //     child: const Text("Contact Me"),
+                //   ),
               ],
             ),
           )
@@ -73,10 +82,16 @@ class CustomAnimatedText extends StatelessWidget {
         animatedTexts: [
           TyperAnimatedText("Mobile Applications?"),
           TyperAnimatedText("Responsive Web Applications?"),
-          TyperAnimatedText("Let's create something Extraordinary together"),
+          TyperAnimatedText("Let's create something Extraordinary together."),
           // TyperAnimatedText("I shoot cars and short movies."),
         ],
       ),
     );
   }
+}
+
+launchMailto() async {
+  final mailtoLink =
+      Mailto(to: ["anirudhjayakumar.business@gmail.com"], body: 'Hey!');
+  await launchUrl('$mailtoLink' as Uri);
 }

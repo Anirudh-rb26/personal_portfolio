@@ -1,8 +1,11 @@
 class Experience {
   final String title, description, date;
 
-  Experience(
-      {required this.title, required this.description, required this.date});
+  Experience({
+    required this.title,
+    required this.description,
+    required this.date,
+  });
 }
 
 List<Experience> myExperiences = [
