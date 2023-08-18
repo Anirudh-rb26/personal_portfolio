@@ -1,8 +1,8 @@
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
 
-class myInfo extends StatelessWidget {
-  const myInfo({
+class MyInfo extends StatelessWidget {
+  const MyInfo({
     super.key,
   });
 
@@ -11,7 +11,7 @@ class myInfo extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        color: Color(0xFF242430),
+        color: secondaryColor,
         child: Column(
           children: [
             const Spacer(
@@ -19,7 +19,7 @@ class myInfo extends StatelessWidget {
             ),
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("assets/images/srt.jpg"),
+              backgroundImage: AssetImage("assets/images/me.jpg"),
             ),
             const Spacer(),
             TextButton(

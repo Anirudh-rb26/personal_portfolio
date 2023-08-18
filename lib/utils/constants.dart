@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-const primaryColor = Color(0xFFFFC107);
-const secondaryColor = Color(0xFF242430);
+const primaryColor = Colors.deepPurple;
+const secondaryColor = Color.fromARGB(255, 7, 7, 9);
 const darkColor = Color(0xFF191923);
 const textColor = Color(0xFF8B8B8D);
-const backgroundColor = Color(0xFF1E1E28);
+const backgroundColor = Colors.black;
 
 const defaultPadding = 20.0;
 const defaultDuration = Duration(seconds: 1);

@@ -51,7 +51,7 @@ class ProjectsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      itemCount: my_projects.length,
+      itemCount: myProjects.length,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         childAspectRatio: childAspectRatio,
@@ -60,7 +60,7 @@ class ProjectsGrid extends StatelessWidget {
         mainAxisSpacing: defaultPadding,
       ),
       itemBuilder: (context, index) => ProjectCard(
-        project: my_projects[index],
+        project: myProjects[index],
       ),
     );
   }

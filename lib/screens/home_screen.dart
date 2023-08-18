@@ -17,24 +17,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MainScreen(
+    return const MainScreen(
       mainChildren: [
-        Container(
-          child: HomeBanner(),
-          key: homeKey,
-        ),
+        HomeBanner(),
         SizedBox(height: defaultPadding / 2),
         ExperienceScreen(),
         SizedBox(height: defaultPadding / 2),
-        Container(
-          child: ProjectScreen(),
-          key: projectKey,
-        ),
+        ProjectScreen(),
         SizedBox(height: defaultPadding / 2),
-        Container(
-          child: ContactScreen(),
-          key: contactKey,
-        ),
+        ContactScreen(),
         SizedBox(height: defaultPadding / 2),
         ClosingCredits(),
       ],

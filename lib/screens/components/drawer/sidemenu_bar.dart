@@ -1,12 +1,11 @@
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:anirudhs_portfolio/screens/components/drawer/components/personal_information.dart';
 import 'package:anirudhs_portfolio/screens/components/drawer/components/skill_header.dart';
-import 'package:anirudhs_portfolio/screens/components/drawer/components/skill_text.dart';
-import 'package:anirudhs_portfolio/screens/components/contact%20screen/socialMedia_links.dart';
 import 'package:flutter/material.dart';
 
-import 'components/downloadResume_button.dart';
+import 'components/download_resume_button.dart';
 import 'components/my_info.dart';
+import 'components/skill_text.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
@@ -19,7 +18,7 @@ class SideMenu extends StatelessWidget {
       child: SafeArea(
         child: Column(
           children: [
-            myInfo(),
+            MyInfo(),
             Expanded(
               child: SingleChildScrollView(
                 padding: EdgeInsets.all(defaultPadding),
@@ -39,11 +38,11 @@ class SideMenu extends StatelessWidget {
                     ),
                     Divider(),
                     SkillHeader(),
-                    skillText(skill: "Flutter, Dart"),
-                    skillText(skill: "Git, Github"),
-                    skillText(skill: "C, C++"),
-                    skillText(skill: "Firebase, Hive"),
-                    skillText(skill: "Photography, Cinematographer"),
+                    SkillText(skill: "Flutter, Dart"),
+                    SkillText(skill: "Git, Github"),
+                    SkillText(skill: "C, C++"),
+                    SkillText(skill: "Firebase, Hive"),
+                    SkillText(skill: "Photography, Cinematographer"),
                     Divider(),
                     DownloadResumeButton(),
                   ],

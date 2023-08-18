@@ -13,7 +13,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
-      appBar: MyAppBar(context),
+      appBar: myAppBar(context),
       drawer: const SideMenu(),
       body: Center(
         child: Container(

@@ -1,8 +1,5 @@
-import 'dart:math';
-
 import 'package:anirudhs_portfolio/screens/components/project%20screen/project_cards.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../../../utils/constants.dart';
 
@@ -15,7 +12,7 @@ class DownloadResumeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("Download My Resume"),
+        const Text("Download My Resume"),
         Container(
           height: 40,
           width: 500,
@@ -28,7 +25,7 @@ class DownloadResumeButton extends StatelessWidget {
               openURL(
                   "https://drive.google.com/file/d/1Fc_vEwjagbmIuKcXbJZPVkrVbxfoeamg/view?usp=sharing");
             },
-            icon: Icon(Icons.file_copy),
+            icon: const Icon(Icons.file_copy),
           ),
         ),
       ],

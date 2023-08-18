@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../utils/constants.dart';
 
-class skillText extends StatelessWidget {
-  const skillText({
+class SkillText extends StatelessWidget {
+  const SkillText({
     super.key,
     required this.skill,
   });

@@ -1,11 +1,8 @@
-import 'dart:html';
-
-import 'package:anirudhs_portfolio/screens/main_screen.dart';
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:anirudhs_portfolio/utils/responsive.dart';
 import 'package:flutter/material.dart';
 
-AppBar MyAppBar(BuildContext context) {
+AppBar myAppBar(BuildContext context) {
   return AppBar(
     backgroundColor: backgroundColor,
     leading: Builder(

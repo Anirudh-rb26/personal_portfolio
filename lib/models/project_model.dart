@@ -4,7 +4,7 @@ class Project {
   Project({required this.title, required this.description, required this.url});
 }
 
-List<Project> my_projects = [
+List<Project> myProjects = [
   Project(
     title: "Expense Tracker (Demo Project)",
     description:

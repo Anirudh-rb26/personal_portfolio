@@ -1,4 +1,4 @@
-import 'package:anirudhs_portfolio/screens/components/contact%20screen/socialMedia_links.dart';
+import 'package:anirudhs_portfolio/screens/components/contact%20screen/socialmedia_links.dart';
 import 'package:anirudhs_portfolio/screens/components/project%20screen/project_cards.dart';
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -17,19 +17,19 @@ class ContactScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
-        SizedBox(height: defaultPadding),
+        const SizedBox(height: defaultPadding),
         Container(
           decoration: BoxDecoration(
             color: secondaryColor,
             borderRadius: BorderRadius.circular(35),
           ),
-          padding: EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(defaultPadding),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(height: defaultPadding),
-              Text("Personal Accounts"),
-              SizedBox(height: defaultPadding),
+              const SizedBox(height: defaultPadding),
+              const Text("Personal Accounts"),
+              const SizedBox(height: defaultPadding),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -37,33 +37,39 @@ class ContactScreen extends StatelessWidget {
                     onTap: () {
                       openURL(twitter);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/twitter.png"),
                     ),
                   ),
-                  SizedBox(width: defaultPadding),
+                  const SizedBox(width: defaultPadding),
                   GestureDetector(
                     onTap: () {
                       openURL(personalInstagram);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/instagram.png"),
                     ),
                   ),
-                  SizedBox(width: defaultPadding),
+                  const SizedBox(width: defaultPadding),
                   GestureDetector(
                     onTap: () {
                       openURL(personalYoutube);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/youtube.png"),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: defaultPadding),
-              Text("Professional Accounts"),
-              SizedBox(height: defaultPadding),
+              const SizedBox(height: defaultPadding),
+              const Text("Professional Accounts"),
+              const SizedBox(height: defaultPadding),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -71,16 +77,20 @@ class ContactScreen extends StatelessWidget {
                     onTap: () {
                       openURL(photographyInstagram);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/instagram.png"),
                     ),
                   ),
-                  SizedBox(width: defaultPadding),
+                  const SizedBox(width: defaultPadding),
                   GestureDetector(
                     onTap: () {
                       openURL(linkedin);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/linkedin.png"),
                     ),
                   ),
@@ -93,12 +103,14 @@ class ContactScreen extends StatelessWidget {
                   //     child: Image.asset("assets/icons/github.png"),
                   //   ),
                   // ),
-                  SizedBox(width: defaultPadding),
+                  const SizedBox(width: defaultPadding),
                   GestureDetector(
                     onTap: () {
                       openURL(personalYoutube);
                     },
-                    child: Container(
+                    child: SizedBox(
+                      height: 25,
+                      width: 25,
                       child: Image.asset("assets/icons/youtube.png"),
                     ),
                   ),
