@@ -1,6 +1,7 @@
 import 'package:anirudhs_portfolio/screens/components/contact%20screen/contact_screen.dart';
 import 'package:anirudhs_portfolio/screens/components/experience%20screen/experience_screen.dart';
 import 'package:anirudhs_portfolio/screens/components/endscreen/closing_credits.dart';
+import 'package:anirudhs_portfolio/screens/components/project%20screen/photo_cards.dart';
 import 'package:anirudhs_portfolio/utils/constants.dart';
 import 'package:anirudhs_portfolio/screens/main_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,8 @@ class HomeScreen extends StatelessWidget {
         HomeBanner(),
         SizedBox(height: defaultPadding / 2),
         ExperienceScreen(),
+        SizedBox(height: defaultPadding / 2),
+        PhotoScreen(),
         SizedBox(height: defaultPadding / 2),
         ProjectScreen(),
         SizedBox(height: defaultPadding / 2),

@@ -7,8 +7,8 @@ import '../../../models/project_model.dart';
 
 void openURL(String url) => launchUrl(Uri.parse(url));
 
-class ProjectScreen extends StatelessWidget {
-  const ProjectScreen({
+class PhotoScreen extends StatelessWidget {
+  const PhotoScreen({
     super.key,
   });
 
@@ -18,7 +18,7 @@ class ProjectScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "My Coding Projects",
+          "My Photography Portfolio",
           style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: defaultPadding / 2),
@@ -37,6 +37,7 @@ class ProjectScreen extends StatelessWidget {
   }
 }
 
+// This will become the grid layout.
 class ProjectsGrid extends StatelessWidget {
   const ProjectsGrid({
     super.key,
@@ -66,6 +67,7 @@ class ProjectsGrid extends StatelessWidget {
   }
 }
 
+// This has to become the image card
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
     super.key,
