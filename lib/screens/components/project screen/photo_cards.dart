@@ -17,10 +17,6 @@ class PhotoScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "My Photography Portfolio",
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
         const SizedBox(height: defaultPadding / 2),
         const Responsive(
           mobile: ProjectsGrid(

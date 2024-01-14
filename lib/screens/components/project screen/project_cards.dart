@@ -17,10 +17,6 @@ class ProjectScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "My Coding Projects",
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
         const SizedBox(height: defaultPadding / 2),
         const Responsive(
           mobile: ProjectsGrid(
