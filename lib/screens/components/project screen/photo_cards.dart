@@ -14,22 +14,7 @@ class PhotoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const SizedBox(height: defaultPadding / 2),
-        const Responsive(
-          mobile: ProjectsGrid(
-            crossAxisCount: 1,
-            childAspectRatio: 1.7,
-          ),
-          desktop: ProjectsGrid(),
-          mobileLarge: ProjectsGrid(crossAxisCount: 2),
-          tablet: ProjectsGrid(childAspectRatio: 1.1),
-        ),
-        const SizedBox(height: defaultPadding / 2),
-      ],
-    );
+    return Center(child: Text("Coming Soon."));
   }
 }
 
